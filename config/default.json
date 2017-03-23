@@ -1,0 +1,13 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "mysql": "mysql://root:@localhost:3306/testFeathers",
+  "public": "../public/",
+  "auth": {
+    "idField": "id",
+    "token": {
+      "secret": "6HzLJvowV3M8oqFUgzyiMAlv2CU52GkLei02TQuyKZWeBl3ern+nvpRhmIbdii79Swjkx1r9ccFPyeDdLrBc4A=="
+    },
+    "local": {}
+  }
+}
