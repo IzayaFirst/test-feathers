@@ -10,9 +10,16 @@ const myHook = options => { // always wrap in a function so you can pass options
   };
 };
 
+const logging = options =>{
+  return hook =>{
+    console.log(hook)
+    return Promise.resolve(hook); // A good convention is to always return a promise.
+  }
+}
+
 exports.before = {
   all: [],
-  find: [],
+  find: [logging()],
   get: [],
   create: [myHook()],
   update: [],
